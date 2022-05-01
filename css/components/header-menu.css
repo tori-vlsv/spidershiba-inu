@@ -1,0 +1,114 @@
+.header-menu {
+    padding: 168px 0 20px;
+    background: url("../../images/header-menu.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.header-menu__bg {
+    position: absolute;
+    z-index: 0;
+}
+
+.header-menu__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu__text {
+    max-width: 848px;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 90px;
+    margin-bottom: 5px;
+} 
+
+h1 span {
+    color: var(--red);
+}
+
+.header-menu__text__min {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--grey);
+    margin-bottom: 40px;
+}
+
+.header-menu__text__max {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--grey);
+    margin-bottom: 46px;
+}
+
+.header-menu__btn-red {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 25px 58px;
+    background-color: var(--red);
+    margin-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-menu__btn-red:hover {
+    background-color: var(--white);
+    color: var(--red);
+}
+
+.header-menu__btn {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header-menu__btn-trans {
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 27px 48px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-menu__btn-trans:hover {
+    color: var(--red);
+    background-color: #fff;
+}
+
+.header-menu__pic {
+    max-width: 592px;
+    margin-right: 125px;
+}
+
+.header-menu__label span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.header-menu__label {
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 30px;
+    max-width: 678px;
+}
+
+.header-menu__label input {
+    background-color: transparent;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.4);
+}

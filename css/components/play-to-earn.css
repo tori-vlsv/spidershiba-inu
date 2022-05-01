@@ -1,0 +1,99 @@
+.play-to-earn {
+    padding: 100px 0 175px;
+}
+
+.play-to-earn h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.play-to-earn__p {
+    font-size: 25px;
+    line-height: 42px;
+    opacity: 0.5;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.plot-and-goal__block {
+    background-color: var(--light-black);
+    border-radius: 30px;
+    padding: 36px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.plot-and-goal__block img {
+    max-width: 649px;
+    width: 100%;
+}
+
+.plot__block__txt {
+    max-width: 946px;
+}
+
+.plot__block__txt h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.plot__block__p {
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+}
+
+.earn-events__blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.earn-events__block h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.earn-events__block p {
+    font-size: 28px;
+    line-height: 33px;
+    opacity: 0.8;
+    max-width: 570px;
+} 
+
+.earn-events__block {
+    border-radius: 30px;
+    display: flex;
+}
+
+.earn__block {
+    padding: 36px 64px 40px 30px;
+    background-color: var(--orange);
+
+}
+
+.earn__block img {
+    max-width: 153px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.events__block {
+    padding: 36px 38px 38px 30px;
+    background-color: var(--blue);
+}
+
+.events__block img {
+    max-width: 180px;
+    width: 100%;
+    margin-right: 30px;
+}

@@ -1,0 +1,16 @@
+
+
+/* base styles */
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./global.css);
+
+
+/* components */
+@import url(./../components/header.css);
+@import url(./../components/header-menu.css);
+@import url(./../components/warning.css);
+@import url(./../components/spider-web.css);
+@import url(./../components/how-it-works.css);
+@import url(./../components/play-to-earn.css);
+@import url(./../components/invest.css);

@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	box-shadow: none;
+}
+
+
+body, input, button {
+	font-family: 'SF Pro Display';
+	text-rendering: optimizeSpeed;
+	color: var(--white);
+}
+
+body {
+	background-color: #101932;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+img {
+	display: block;
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1716px;
+	padding: 0 10px;
+}
+
+.wrapper-big {
+	margin: 0 auto;
+	max-width: 1756px;
+	padding: 0 10px;
+}

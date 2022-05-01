@@ -1,0 +1,48 @@
+.invest {
+    background-color: var(--violet);
+    padding: 150px 0 144px;
+}
+
+.invest__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invest__left-block h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.invest__left-block p {
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+
+.invest__btn {
+    font-size: 25px;
+    line-height: 30px;
+    background-color: var(--red);
+    padding: 25px 30px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.invest__right-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.invest__right-block {
+    display: flex;
+}
+
+.invest__right-block__txt p {
+    max-width: 868px;
+}
+
+
