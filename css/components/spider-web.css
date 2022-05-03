@@ -1,5 +1,5 @@
 .spider-web {
-    padding: 50px 0 293px;
+    padding: 50px 0 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,7 @@
 
 .spider-web__bg {
     position: absolute;
-    top: -30px;
+    top: 10px;
     max-width: 924px;
     width: 100%;
 }

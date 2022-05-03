@@ -1,0 +1,48 @@
+.tokenomics {
+    background-color: #101D3F;
+    padding: 30px 0 130px;
+}
+
+.tokenomics__section h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.tokenomics__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tokenomics__list-block {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 444px;
+    margin-top: 92px;
+}
+
+.tokenomics__list {
+    padding: 35px 52px 20px 30px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 15px;
+}
+
+.tokenomics__list h3 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+
+.tokenomics__list p {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, .3);
+}
+
+.tokenomics__circle-block {
+    margin-top: 66px;
+    width: 33%;
+}

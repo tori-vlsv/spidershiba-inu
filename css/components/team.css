@@ -1,0 +1,69 @@
+.team {
+    padding: 70px 0 140px;
+    background-color: #162344;
+}
+
+.team h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.emploee__foto {
+    border-radius: 35px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.emploee__foto img {
+    width: 100%;
+}
+
+.emploee__name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.emploee__position {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.swiper {
+    padding-bottom: 67px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #A2A7B4;
+    width: 10px;
+    height: 10px;
+    border-radius: 0%;
+    margin: 0 8px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #FF0000;
+}
+
+.team__h2 {
+    margin: 80px 0 40px;
+}
+
+.partners__logo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.partners__logo {
+    max-height: 80px;
+    opacity: 0.6;
+}

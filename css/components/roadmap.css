@@ -1,0 +1,141 @@
+
+.roadmap {
+    padding: 70px 0 130px;
+    position: relative;
+}
+
+.roadmap:before {
+    content: '';
+    position: absolute;
+    background: #384D70;
+    width: 1px;
+    height: calc(100% - 292px);
+    left: calc(50% - 1px);
+    top: 292px;
+}
+
+.roadmap__section h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 50px;
+}
+
+.roadmap__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+.roadmap__block {
+    display: flex;
+    padding: 35px 30px;
+    /* max-width: 792px; */
+    position: relative;
+    /* min-width: 792px; */
+    width: calc(50% - 30px);
+    border-radius: 30px;
+    background: rgba(56, 77, 112, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.roadmap__block-planned {
+    background-color: #384D70;
+}
+
+
+.roadmap__block:before,
+.roadmap__block:after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: red;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.roadmap__block-planned:before,
+.roadmap__block-planned:after {
+    background-color: #fff;
+}
+
+.roadmap__block:before {
+    left: -36px;
+}
+
+.roadmap__block:after {
+    right: -35px;
+}
+
+.roadmap__block:nth-child(2n+1):before {
+    display: none;
+}
+
+.roadmap__block:nth-child(2n):after {
+    display: none;
+}
+
+.roadmap__block__number {
+    margin-right: 30px;
+}
+
+.block-planned__number span {
+    background-color: rgba(56, 77, 112, 0.1);
+}
+
+.roadmap__block__number span {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 34px 53px;
+    background-color: rgba(56, 77, 112, 0.2);
+    border-radius: 30px;
+    display: block;
+}
+
+.roadmap__block-planned .roadmap__block__number span {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.roadmap__block__txt h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.roadmap__block__txt span {
+    margin-left: -15px;
+    display: inline;
+    white-space: normal;
+}
+
+li {
+    font-size: 25px;
+    line-height: 30px;
+    list-style-position: inside;
+
+} 
+
+ul li::marker  {
+    margin-right: 5px;
+    
+}
+
+.roadmap__block__hide {
+   background-color: transparent;
+   border: transparent;
+}
+
+.roadmap__block__hide:before,
+.roadmap__block__hide:after {
+    display: none;
+}

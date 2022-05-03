@@ -5,6 +5,13 @@
     left: 0;
     width: 100%;
     z-index: 10;
+    transition: 0.5s;
+
+}
+
+header.active {
+    box-shadow: 0 4px 20px rgba(0,0,0,.1);
+    background-color: #101932;
 }
 
 .header__block {

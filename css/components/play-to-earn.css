@@ -97,3 +97,7 @@
     width: 100%;
     margin-right: 30px;
 }
+
+.plot__block__img {
+    border-radius: 30px;
+}
