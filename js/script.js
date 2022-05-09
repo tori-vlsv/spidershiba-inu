@@ -81,3 +81,13 @@ let myDoughnutChart = new Chart(ctx, {
     }
   }
 });
+
+function toggleFaqItem() {
+const btn = $('.item__faq__title');
+  btn.on('click', function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+  });
+}
+toggleFaqItem();
+
