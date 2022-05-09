@@ -19,6 +19,7 @@ $(window).on('scroll', function() {
   const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     spaceBetween: 54,
+    grabCursor: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -83,11 +84,21 @@ let myDoughnutChart = new Chart(ctx, {
 });
 
 function toggleFaqItem() {
-const btn = $('.item__faq__title');
+  const btn = $('.item__faq__title');
   btn.on('click', function() {
     $(this).next().slideToggle();
     $(this).toggleClass('active');
+    btn.not(this).next().slideUp();
+    btn.not(this).removeClass('active');
   });
 }
 toggleFaqItem();
 
+function copyText() {
+  const copyBtn = $('.copy__btn');
+  copyBtn.on('click', function() {
+    $(this).prev().children('.copy__txt').select();
+    document.execCommand("copy");
+  });
+}
+copyText();
