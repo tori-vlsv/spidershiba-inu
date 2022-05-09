@@ -102,8 +102,10 @@ h1 span {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 14px 30px;
-    max-width: 678px;
+    padding: 14px 28px;
+    max-width: 680px;
+    margin-right: 25px;
+    width: 100%;
 }
 
 .header-menu__label input {
@@ -111,4 +113,16 @@ h1 span {
     font-size: 25px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.4);
+}
+
+.header-menu__label__string {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-menu__label__string i {
+    font-size: 30px;
+    cursor: pointer;
 }
