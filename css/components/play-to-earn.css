@@ -26,6 +26,7 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .plot-and-goal__block img {
@@ -54,6 +55,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .earn-events__block h3 {
@@ -92,12 +94,88 @@
     background-color: var(--blue);
 }
 
-.events__block img {
+.earn__block__phone_img {
     max-width: 180px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.earn__block__coin_img {
+    max-width: 153px;
     width: 100%;
     margin-right: 30px;
 }
 
 .plot__block__img {
     border-radius: 30px;
+}
+
+@media(max-width: 1735px) {
+    .plot-and-goal__block {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .plot-and-goal__block img {
+       margin-bottom: 30px;
+    }
+
+    .earn-events__block p {
+        width: 100%;
+    }
+
+    .plot__block__txt {
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    .earn-events__blocks {
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .earn-events__block,
+    .events__block {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .earn-events__block h3 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 514px) {
+    .play-to-earn {
+        padding: 25px 0;
+    }
+
+    .play-to-earn__p {
+        margin-bottom: 15px;
+    }
+
+    .earn-events__block h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    .earn-events__block p {
+        font-size: 18px;
+        line-height: 22px;
+    } 
+
+    .plot__block__txt h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    .plot__block__p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
 }

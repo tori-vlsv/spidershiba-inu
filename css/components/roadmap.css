@@ -2,6 +2,7 @@
 .roadmap {
     padding: 70px 0 130px;
     position: relative;
+    overflow: hidden;
 }
 
 .roadmap:before {
@@ -9,9 +10,33 @@
     position: absolute;
     background: #384D70;
     width: 1px;
-    height: calc(100% - 292px);
+    bottom: 300px;
+    height: calc(100% - 592px);
     left: calc(50% - 1px);
     top: 292px;
+}
+
+.roadmap__line {
+    position: absolute;
+    background-color: red; 
+    height: 0;
+    width: 1px;
+    left: calc(50% - 1px);
+    top: 292px;
+    bottom: 300px;
+}
+
+.roadmap__line.active {
+    animation: fullHeight 5s linear forwards;
+}
+
+@keyframes fullHeight {
+    from {
+        height: 0;
+    }
+    to {
+        height: calc(100% - 592px);
+    }
 }
 
 .roadmap__section h2 {
@@ -138,4 +163,72 @@ ul li::marker  {
 .roadmap__block__hide:before,
 .roadmap__block__hide:after {
     display: none;
+}
+
+@media(max-width: 1325px) {
+    
+    .roadmap__block__hide {
+        display: none;
+    }
+
+    .roadmap__blocks {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .roadmap__block:before {
+        left: -5px;
+        z-index: 3;
+    }
+
+    .roadmap__block:after {
+        right: auto;
+        left: -5px;
+        z-index: 3;
+    }
+
+    .roadmap__line {
+        left: 25px;
+        z-index: 2;
+    }
+
+    .roadmap:before {
+        left: 25px;
+    }
+
+    .roadmap__block {
+        width: 100%;
+    }
+}
+
+@media(max-width: 720px) {
+    .roadmap__block {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .roadmap__block__number span {
+        display: inline-block;
+    }
+}
+
+@media(max-width: 514px) {
+
+    .roadmap__block__txt h3 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 15px;
+    }
+    
+    li {
+        font-size: 18px;
+        line-height: 22px;
+    } 
+
+
+.roadmap {
+    padding: 25px 0;
+    }
+
 }

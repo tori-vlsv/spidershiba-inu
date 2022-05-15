@@ -77,7 +77,7 @@ h1 span {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.05);
     cursor: pointer;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .header-menu__btn-trans:hover {
@@ -88,6 +88,11 @@ h1 span {
 .header-menu__pic {
     max-width: 592px;
     margin-right: 125px;
+}
+
+.header-menu__pic img {
+    max-width: 592px;
+    width: 100%;
 }
 
 .header-menu__label span {
@@ -125,4 +130,104 @@ h1 span {
 .header-menu__label__string i {
     font-size: 30px;
     cursor: pointer;
+}
+
+.header-menu__pic__hidden {
+    display: none;
+
+}
+
+@media(max-width: 1325px) {
+    h1 {
+        font-size: 60px;
+        line-height: 68px;
+        margin-bottom: 30px;
+
+    }
+
+    .header-menu__text__min {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .header-menu__text__max {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+
+    }
+    
+    .header-menu__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-menu__pic {
+        display: none;
+    }
+
+    .header-menu__pic__hidden {
+        display: block;
+        max-width: 592px;
+        width: 100%;
+        margin: 0 auto 50px;
+    }
+
+    .header-menu__text {
+        text-align: center;
+    }
+
+    .header-menu__btn {
+        justify-content: center;
+    }
+
+    .header-menu__text__max {
+        width: 100%;
+    }
+
+    .header-menu__label__string {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 720px) {
+    .header-menu__btn {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .header-menu__btn-red {
+        margin-right: 0;
+    }
+
+    .header-menu__label {
+        width: 100%;
+    }
+
+    .header-menu__label input {
+        font-size: 16px;
+        text-align: center;
+        
+    }
+
+    .header-menu__btn-red,
+    .header-menu__btn-trans {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 514px) {
+    .header-menu__label input {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 422px) {
+    .header-menu__label input {
+        font-size: 10px;
+    }
 }

@@ -22,6 +22,7 @@
     border-radius: 15px;
     background-color: #384D70;
     padding: 18px 35px;
+    max-width: 100%;
 }
 
 .item__faq__title {
@@ -53,3 +54,22 @@
     transform: rotate(180deg);
 }
 
+@media(max-width: 1325px) {
+    .item__faq__title h3 {
+        margin-right: 38px;
+    }
+
+    .item__faq {
+        padding: 18px 20px;
+    }
+}
+
+@media(max-width: 514px) {
+    .faq {
+        padding: 25px 0;
+    }
+
+    .block__faq h2 {
+        margin-bottom: 15px;
+    }
+}

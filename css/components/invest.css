@@ -76,3 +76,9 @@
     top: 0;
     left: 0;
 }
+
+@media(max-width: 1325px) {
+    .invest {
+        display: none;
+    }
+}

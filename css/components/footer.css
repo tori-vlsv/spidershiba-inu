@@ -10,3 +10,9 @@
     line-height: 24px;
     opacity: .4;
 }
+
+@media(max-width: 514px) {
+    .footer {
+        padding: 20px 0;
+    }
+}

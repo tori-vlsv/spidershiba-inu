@@ -46,12 +46,13 @@
     margin-top: 66px;
     width: 33%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tokenomics__circle-block img {
     position: absolute;
-    top: 35%;
-    left: 35%;
     width: 100%;
     max-width: 193px;
 }
@@ -94,4 +95,43 @@
 
 .tokenomics__list_borders span.blue {
     background-color: #0096F2;
+}
+
+@media(max-width: 1325px) {
+    .tokenomics__blocks {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+.tokenomics__circle-block {
+    order: 1;
+    width: 48%;
+    }
+
+    .tokenomics__list-block {
+        margin-top: 0;
+        order: 2;
+    }
+}
+
+@media(max-width: 720px) {
+    .tokenomics__circle-block img {
+        max-width: 116px;
+    }
+
+    .tokenomics__circle-block {
+        width: 55%;
+        }
+}
+
+@media(max-width: 514px) {
+    .tokenomics__circle-block {
+        width: 67%;
+    }
+
+    .tokenomics {
+        padding: 25px 0;
+    }
 }

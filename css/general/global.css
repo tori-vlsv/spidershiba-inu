@@ -42,3 +42,9 @@ input, textarea {
 	max-width: 1756px;
 	padding: 0 10px;
 }
+
+/* @media(max-width: 1300px) { 
+	html {
+		font-size: 14px;
+	}
+} */
