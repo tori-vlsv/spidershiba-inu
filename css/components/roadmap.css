@@ -211,6 +211,19 @@ ul li::marker  {
     .roadmap__block__number span {
         display: inline-block;
     }
+
+    .roadmap__block:before,
+.roadmap__block:after {
+    display: none;
+    }
+
+    .roadmap:before {
+       display: none;
+    }
+
+    .roadmap__line {
+        display: none;
+    }
 }
 
 @media(max-width: 514px) {

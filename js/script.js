@@ -91,7 +91,7 @@ let myDoughnutChart = new Chart(ctx, {
         color: 'rgba(0, 0, 0, .3)',
         font: {
           weight: 'bold',
-          size: 25,
+          size: 14,
           lineHeight: 30,
         }
       }
@@ -182,4 +182,19 @@ for (let i = 0; i < block.length; i++) {
   console.log(height);
 }
 
-
+function toggleMobileMenu() {
+  let burger = $('.burger__button');
+  let menu = $('nav');
+  let close = $('.menu__close');
+  burger.on('click', function() {
+      $(this).hide();
+      close.show();
+      menu.addClass('active');
+  });
+  close.on('click', function() {
+      $(this).hide();
+      burger.show();
+      menu.removeClass('active');
+  });
+}
+toggleMobileMenu();
